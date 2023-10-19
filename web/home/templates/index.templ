@@ -1,0 +1,46 @@
+package index
+
+import gr "TIKify/web/grafolog/templates"
+
+templ Layout(title, template, graph string) {
+    <!DOCTYPE html>
+    <html lang="en" class="h-full bg-white">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <!--    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />-->
+        <!--    <link href="/css/layout.css" rel="stylesheet">-->
+
+        <title>{ title }</title>
+    </head>
+    <body class="h-full">
+        @LeftDrawer("user")
+
+    <!-- Page Content -->
+    <div class="flex-1 flex ml-16 h-screen">
+        switch template {
+            case "Graph":
+                @gr.Graph(graph)
+            case "GraphConf":
+                @gr.GraphConfig()
+            case "Home":
+                @Home():
+            case "Login":
+                @Login()
+        }
+    </div>
+    </body>
+    switch template {
+        case "Graph":
+            @gr.GraphScripts()
+        case "GraphConf":
+
+        case "Home":
+
+        case "Login":
+
+    }
+
+    </html>
+}

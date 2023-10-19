@@ -1,0 +1,61 @@
+package index
+
+templ LeftDrawer(user string) {
+    <!-- Left Drawer -->
+    <div class="h-screen bg-rose-950 text-white w-16 fixed top-0 left-0 transition ease-in-out delay-700 hover:w-52 duration-300 overflow-hidden" id="drawer">
+        <div class="h-full flex flex-col p-4 content-end">
+            <img src="/assets/Grafolog_logo.png" class="flex-none mb-4" alt="Logo"/> <!-- Adjust the width (w-8) and height (h-8) as needed -->
+            <div class="flex-1">
+                <ul>
+                    <li class="flex mb-2 justify-between">
+                        <button class="flex items-center space-x-4 text-white hover:bg-red-900 p-2 rounded-md transition duration-300 ease-in-out">
+                            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 18">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 16.5c0-1-8-2.7-9-2V1.8c1-1 9 .707 9 1.706M10 16.5V3.506M10 16.5c0-1 8-2.7 9-2V1.8c-1-1-9 .707-9 1.706"/>
+                            </svg>
+                            <span>
+                                        <a href="http://127.0.0.1:42069/">Skripta</a>
+                                    </span>
+                        </button>
+                    </li>
+                    <li class="flex mb-2 justify-between">
+                        <button class="flex items-center space-x-4 text-white hover:bg-red-900 p-2 rounded-md transition duration-300 ease-in-out">
+                            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.994 19a8.999 8.999 0 1 1 3.53-17.281M5.995 9l4 4 7-8m-1 8v5m-2.5-2.5h5"/>
+                            </svg>
+                            <span>
+                                        <a href="http://127.0.0.1:42069/">Příklady</a>
+                                    </span>
+                        </button>
+                    </li>
+                    <li class="flex mb-2 justify-between">
+                        <button class="flex items-center space-x-4 text-white hover:bg-red-900 p-2 rounded-md transition duration-300 ease-in-out">
+                            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 18">
+                                <path d="M14.419 10.581a3.564 3.564 0 0 0-2.574 1.1l-4.756-2.49a3.54 3.54 0 0 0 .072-.71 3.55 3.55 0 0 0-.043-.428L11.67 6.1a3.56 3.56 0 1 0-.831-2.265c.006.143.02.286.043.428L6.33 6.218a3.573 3.573 0 1 0-.175 4.743l4.756 2.491a3.58 3.58 0 1 0 3.508-2.871Z"/>
+                            </svg>
+                            <span>
+                                        <a href="http://127.0.0.1:42069/grafolog/graphConfig">Graph</a>
+                                    </span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex justify-center">
+                <a href="http://127.0.0.1:42069/login" class="flex text-gray-300 hover:text-white">
+                    <svg class="w-full text-gray-800 dark:text-white" id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" xml:space="preserve" fill="#000000">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path style="fill:#2EE6E6;" d="M256,512C114.837,512,0,397.163,0,256S114.837,0,256,0s256,114.837,256,256S397.163,512,256,512z"></path>
+                            <path style="fill:#26BFBF;" d="M256.055,0.001v511.998C397.193,511.969,512,397.145,512,256S397.193,0.031,256.055,0.001z"></path>
+                            <path style="fill:#FFAA00;" d="M256,512c-65.737,0-129.113-25.38-177.014-71.192C101.181,360.756,173.838,306.087,256,306.087 c82.202,0,154.901,54.615,177.122,134.588C385.279,486.577,321.869,512,256,512z"></path>
+                            <path style="fill:#F28D00;" d="M256.055,511.998c65.849-0.013,129.238-25.433,177.067-71.322 c-22.217-79.955-94.891-134.561-177.067-134.586V511.998z"></path>
+                            <path style="fill:#FFEECC;" d="M256,339.478c-64.445,0-116.87-52.424-116.87-116.87s52.424-116.87,116.87-116.87 s116.87,52.424,116.87,116.87S320.445,339.478,256,339.478z"></path>
+                            <path style="fill:#FFD9B3;" d="M256.055,105.741v233.734c64.42-0.029,116.815-52.439,116.815-116.866 S320.474,105.771,256.055,105.741z"></path>
+                        </g>
+                            </svg>
+                    <span class="hidden sm:inline">user</span>
+                </a>
+            </div>
+        </div>
+    </div>
+}

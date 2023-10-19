@@ -1,0 +1,24 @@
+package graph
+
+templ GraphConfig() {
+    <div class="mx-auto mt-8 p-4 bg-white rounded-lg shadow-md">
+        <h1 class="text-2xl font-semibold mb-4">Graph Configuration</h1>
+        <form id="graph-form" method="post">
+            <div class="mb-4">
+                <label for="num-nodes" class="block text-gray-600 font-medium mb-2">Number of Nodes</label>
+                <input type="number" id="num-nodes" name="num-nodes" class="w-full p-2 border rounded-md text-gray-700 bg-white" min="1" required/>
+            </div>
+            <div class="mb-4">
+                <label for="graph-type" class="block text-gray-600 font-medium mb-2">Graph Type</label>
+                <select id="graph-type" name="graph-type" class="w-full p-2 border rounded-md text-gray-700 bg-white" required>
+                    <option value="graph">Graph</option>
+                </select>
+            </div>
+            <div class="mb-4">
+                <label for="load-graph" class="block text-gray-600 font-medium mb-2">Load Existing Graph</label>
+                <input type="file" id="load-graph" name="load-graph" accept=".json"/>
+            </div>
+            <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600 transition duration-300 ease-in-out">Generate Graph</button>
+        </form>
+    </div>
+}

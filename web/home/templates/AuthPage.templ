@@ -1,0 +1,23 @@
+package index
+
+templ Login() {
+    <div class="flex bg-white p-8 rounded-lg shadow-md w-96">
+        <h2 class="text-2xl font-semibold mb-6">Login</h2>
+        <form id="login-form">
+            <div class="mb-4">
+                <label for="username" class="block text-gray-600 font-medium mb-2">Username</label>
+                <input type="text" id="username" name="username" class="w-full p-2 border rounded-md text-gray-700"/>
+            </div>
+            <div class="mb-4">
+                <label for="password" class="block text-gray-600 font-medium mb-2">Password</label>
+                <input type="password" id="password" name="password" class="w-full p-2 border rounded-md text-gray-700"/>
+            </div>
+            <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600 transition duration-300 ease-in-out">Log In</button>
+            <div class="text-red-600 mt-2" id="error-message"></div>
+        </form>
+    </div>
+
+    <!-- Additional Page Content Goes Here -->
+    <h1 class="text-2xl font-semibold mt-8">Main Content</h1>
+    <p>Hover over the left edge to open the drawer.</p>
+}

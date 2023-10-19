@@ -1,0 +1,25 @@
+package enigma
+
+templ Enigma() {
+    <!DOCTYPE html>
+    <html lang="en" class="h-full bg-white">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <title>Enigma</title>
+    </head>
+    <body class="h-full">
+    <canvas id="enigma"
+            style="
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;">
+    </canvas>
+    </body>
+    <script type="module" src="/enigma/js/enigma.js"></script>
+    </html>
+}
+
