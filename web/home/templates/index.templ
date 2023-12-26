@@ -1,6 +1,8 @@
 package index
 
-import gr "TIKify/web/grafolog/templates"
+import (gr "TIKify/web/grafolog/templates"
+    hf "TIKify/web/huffman/templates"
+)
 
 templ Layout(title, template, graph string) {
     <!DOCTYPE html>
@@ -28,6 +30,9 @@ templ Layout(title, template, graph string) {
                 @Home():
             case "Login":
                 @Login()
+            case "Huffman":
+                @hf.Huffman()
+            case "Something":
         }
     </div>
     </body>

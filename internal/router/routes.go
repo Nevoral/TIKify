@@ -2,6 +2,7 @@ package router
 
 import (
 	"TIKify/internal/handlers"
+
 	"github.com/gofiber/fiber/v2"
 )
 
@@ -27,5 +28,11 @@ func Router(app *fiber.App) {
 		api.Get("/home", handlers.HomeIndex())
 		api.Get("/login", handlers.LogInIndex())
 	}, "home")
+
+	app.Route("/huffman", func(api fiber.Router) {
+		api.Get("/js/:file", handlers.GetJs())
+		api.Get("/assets/:file", handlers.GetAsset())
+		api.Get("/", handlers.HuffmanIndex())
+	}, "Huffman")
 
 }
